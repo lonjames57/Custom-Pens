@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pens By Lon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button-29.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+       
+
+		
+
+<center>
+<div class="logo"> 
+    <img src="FinalLogoSmall.jpg" alt="logo" width="120px" style="margin-top: 6px;">  
+</div>
+</center>
+
+		<nav class="site-nav">
+			<ul>
+				<li><a href="index.html"><h3>Home</h3></a></li>
+				<li><a href="about.html"><h3>About Me</h3></a></li>
+				<li><a href="beginHere.html"><h3>Ordering</h3></a></li>
+				<!--<li><a href="register.html"><h3>Register to Order</h3></a></li>-->
+				<li><a href="choose.html"><h3>Choose Pen STYLE</h3></a></li>
+				<li><a href="contact.html"><h3>Contact Us</h3></a></li>
+			</ul>
+		</nav>
+	
+	</head>
+
+</head>
+<Style type="text/css">
+	head{
+		text-align: center;
+		display: block;
+		margin: o, auto;
+	}
+			</Style>
+<script>
+
+function cl(which)
+{	console.log(which); }
+
+var currentMaterial=0;
+var currentWood=0;
+var currentStyle=0;
+var currentStyleSub=0;
+
+
+
+var woodsSelectPicsSrc=[];
+var woodsSelectPicsSrcDir="pictures/woods/selectover/";
+woodsSelectPicsSrc[0]="W1-Palm.jpg";
+woodsSelectPicsSrc[1]="W2-Chechen.jpg";
+woodsSelectPicsSrc[2]="W3-ChakteViga.jpg";
+woodsSelectPicsSrc[3]="W4-Osage Orange.jpg";
+woodsSelectPicsSrc[4]="W5-Katalox.jpg";
+woodsSelectPicsSrc[5]="W6-Red Heart.jpg";
+woodsSelectPicsSrc[6]="W7-Bocate.jpg";
+woodsSelectPicsSrc[7]="W8-Granadillo.jpg";
+woodsSelectPicsSrc[8]="W9-Purpleheart.jpg";
+woodsSelectPicsSrc[9]="W10-Zebrawood.jpg";
+woodsSelectPicsSrc[10]="W11-Cocobolo.jpg";
+
+
+var woodsSelectPicsSrcOver=[];
+var woodsSelectPicsSrcOverDir="pictures/woods/selectover/";
+woodsSelectPicsSrcOver[0]="W1-PalmOVER.jpg";
+woodsSelectPicsSrcOver[1]="W2-ChechenOVER.jpg";
+woodsSelectPicsSrcOver[2]="W3-ChakteVigaOVER.jpg";
+woodsSelectPicsSrcOver[3]="W4-Osage OrangeOVER.jpg";
+woodsSelectPicsSrcOver[4]="W5-KataloxOVER.jpg";
+woodsSelectPicsSrcOver[5]="W6-Red HeartOVER.jpg";
+woodsSelectPicsSrcOver[6]="W7-BocateOVER.jpg";
+woodsSelectPicsSrcOver[7]="W8-GranadilloOVER.jpg";
+woodsSelectPicsSrcOver[8]="W9-PurpleheartOVER.jpg";
+woodsSelectPicsSrcOver[9]="W10-ZebrawoodOVER.jpg";
+woodsSelectPicsSrcOver[10]="W11-CocoboloOVER.jpg";
+
+
+var woodsUnderPicsSrc=[];
+var woodsUnderPicsSrcDir="pictures/woods/under/";
+woodsUnderPicsSrc[0]="Palm.jpg";
+woodsUnderPicsSrc[1]="Chechen.jpg";
+woodsUnderPicsSrc[2]="ChakteViga.jpg";
+woodsUnderPicsSrc[3]="Osage Orange.jpg";
+woodsUnderPicsSrc[4]="Katalox.jpg";
+woodsUnderPicsSrc[5]="Red Heart.jpg";
+woodsUnderPicsSrc[6]="Bocate.jpg";
+woodsUnderPicsSrc[7]="Granadillo.jpg";
+woodsUnderPicsSrc[8]="Purpleheart.jpg";
+woodsUnderPicsSrc[9]="Zebrawood.jpg";
+woodsUnderPicsSrc[10]="Cocobolo.jpg";
+
+var woodsPicsTitle=[];
+woodsPicsTitle[0]="Palm";
+woodsPicsTitle[1]="Chechen";
+woodsPicsTitle[2]="Chakte Viga";
+woodsPicsTitle[3]="Osage Orange";
+woodsPicsTitle[4]="Katalox";
+woodsPicsTitle[5]="Red Heart";
+woodsPicsTitle[6]="Bocate";
+woodsPicsTitle[7]="Granadillo";
+woodsPicsTitle[8]="Purpleheart";
+woodsPicsTitle[9]="Zebrawood";
+woodsPicsTitle[10]="Cocobolo";
+
+
+
+/* the acrylic pictures used in the Selects */ 
+var acrylicsSelectPicsSrc=[];
+var acrylicsSelectPicsSrcDir="pictures/acrylics/selectover/";
+acrylicsSelectPicsSrc[0]="A1-1034-Purp-Lavndr.jpg";
+acrylicsSelectPicsSrc[1]="A2-1134-Brown Rose.jpg";
+acrylicsSelectPicsSrc[2]="A3-1234-DeepPurp-White.jpg";
+acrylicsSelectPicsSrc[3]="A4-1334-Green-LtGreen.jpg";
+acrylicsSelectPicsSrc[4]="A5-1434-Red-Pink.jpg";
+acrylicsSelectPicsSrc[5]="A6-1534-Turquoise-Black.jpg";
+acrylicsSelectPicsSrc[6]="A7-1634-Dark Blue-Lt Blue.jpg";
+acrylicsSelectPicsSrc[7]="A8-1734-Orange-Gold.jpg";
+acrylicsSelectPicsSrc[8]="A9-2034-Red White.jpg";
+acrylicsSelectPicsSrc[9]="A10-2134-Black-White.jpg";
+acrylicsSelectPicsSrc[10]="A11-2234-Orange-Black.jpg";
+acrylicsSelectPicsSrc[11]="A12-2334-Aqua-Green.jpg";
+acrylicsSelectPicsSrc[12]="A13-2434-Copper-Gold.jpg";
+acrylicsSelectPicsSrc[13]="A14-2534-Aqua-Black.jpg";
+acrylicsSelectPicsSrc[14]="A15-2634-Gold-White.jpg";
+acrylicsSelectPicsSrc[15]="A16-2734-White-Black.jpg";
+acrylicsSelectPicsSrc[16]="A17-2834-Cherry-Rose.jpg";
+acrylicsSelectPicsSrc[17]="A18-2934-Green-Yellow-Black.jpg";
+acrylicsSelectPicsSrc[18]="A19-4034-Camouflage.jpg";
+acrylicsSelectPicsSrc[19]="A20-4134-Stained Glass.jpg";
+acrylicsSelectPicsSrc[20]="A21-4234-Seashell.jpg";
+acrylicsSelectPicsSrc[21]="A22-4334-Black-Gold.jpg";
+acrylicsSelectPicsSrc[22]="A23-6034-Ruby Red.jpg";
+acrylicsSelectPicsSrc[23]="A24-6134-Sapphire Blue.jpg";
+acrylicsSelectPicsSrc[24]="A25-6234-Amethyst Purple.jpg";
+acrylicsSelectPicsSrc[25]="A26-6334-Emerald Green.jpg";
+acrylicsSelectPicsSrc[26]="A27-RB01-Antique Silver.jpg";
+acrylicsSelectPicsSrc[27]="A28-RB02-Molten Bronze.jpg";
+acrylicsSelectPicsSrc[28]="A29-RB03-Marinara.jpg";
+acrylicsSelectPicsSrc[29]="A30-RB04-Grape Vine.jpg";
+acrylicsSelectPicsSrc[30]="A31-RB05-Northern Lights.jpg";
+acrylicsSelectPicsSrc[31]="A32-RB06-Silver Banana Split.jpg";
+acrylicsSelectPicsSrc[32]="A33-RB07-Parrot Bay.jpg";
+acrylicsSelectPicsSrc[33]="A34-RB08-Earth Core.jpg";
+acrylicsSelectPicsSrc[34]="A35-RB09-Pomegranate Martini.jpg";
+acrylicsSelectPicsSrc[35]="A36-RB10-Purple Passion.jpg";
+
+
+/* the acrylic pictures used in the Selects Moue Over */ 
+var acrylicsSelectPicsSrcOver=[];
+var acrylicsSelectPicsSrcOverDir="pictures/acrylics/selectover/";
+acrylicsSelectPicsSrcOver[0]="A1-1034-Purp-LavndrOver.jpg";
+acrylicsSelectPicsSrcOver[1]="A2-1134-Brown RoseOVER.jpg";
+acrylicsSelectPicsSrcOver[2]="A3-1234-DeepPurp-WhiteOVER.jpg";
+acrylicsSelectPicsSrcOver[3]="A4-1334-Green-LtGreenOVER.jpg";
+acrylicsSelectPicsSrcOver[4]="A5-1434-Red-PinkOVER.jpg";
+acrylicsSelectPicsSrcOver[5]="A6-1534-Turquoise-BlackOVER.jpg";
+acrylicsSelectPicsSrcOver[6]="A7-1634-Dark Blue-Lt BlueOVER.jpg";
+acrylicsSelectPicsSrcOver[7]="A8-1734-Orange-GoldOVER.jpg";
+acrylicsSelectPicsSrcOver[8]="A9-2034-Red WhiteOVER.jpg";
+acrylicsSelectPicsSrcOver[9]="A10-2134-Black-WhiteOVER.jpg";
+acrylicsSelectPicsSrcOver[10]="A11-2234-Orange-BlackOVER.jpg";
+acrylicsSelectPicsSrcOver[11]="A12-2334-Aqua-GreenOVER.jpg";
+acrylicsSelectPicsSrcOver[12]="A13-2434-Copper-GoldOVER.jpg";
+acrylicsSelectPicsSrcOver[13]="A14-2534-Aqua-BlackOVER.jpg";
+acrylicsSelectPicsSrcOver[14]="A15-2634-Gold-WhiteOVER.jpg";
+acrylicsSelectPicsSrcOver[15]="A16-2734-White-BlackOVER.jpg";
+acrylicsSelectPicsSrcOver[16]="A17-2834-Cherry-RoseOVER.jpg";
+acrylicsSelectPicsSrcOver[17]="A18-2934-Green-Yellow-BlackOVER.jpg";
+acrylicsSelectPicsSrcOver[18]="A19-4034-CamouflageOVER.jpg";
+acrylicsSelectPicsSrcOver[19]="A20-4134-Stained GlassOVER.jpg";
+acrylicsSelectPicsSrcOver[20]="A21-4234-SeashellOVER.jpg";
+acrylicsSelectPicsSrcOver[21]="A22-4334-Black-GoldOVER.jpg";
+acrylicsSelectPicsSrcOver[22]="A23-6034-Ruby RedOVER.jpg";
+acrylicsSelectPicsSrcOver[23]="A24-6134-Sapphire BlueOVER.jpg";
+acrylicsSelectPicsSrcOver[24]="A25-6234-Amethyst PurpleOVER.jpg";
+acrylicsSelectPicsSrcOver[25]="A26-6334-Emerald GreenOVER.jpg";
+acrylicsSelectPicsSrcOver[26]="A27-RB01-Antique SilverOVER.jpg";
+acrylicsSelectPicsSrcOver[27]="A28-RB02-Molten BronzeOVER.jpg";
+acrylicsSelectPicsSrcOver[28]="A29-RB03-MarinaraOVER.jpg";
+acrylicsSelectPicsSrcOver[29]="A30-RB04-Grape VineOVER.jpg";
+acrylicsSelectPicsSrcOver[30]="A31-RB05-Northern LightsOVER.jpg";
+acrylicsSelectPicsSrcOver[31]="A32-RB06-Silver Banana SplitOVER.jpg";
+acrylicsSelectPicsSrcOver[32]="A33-RB07-Parrot BayOVER.jpg";
+acrylicsSelectPicsSrcOver[33]="A34-RB08-Earth CoreOVER.jpg";
+acrylicsSelectPicsSrcOver[34]="A35-RB09-Pomegranate MartiniOVER.jpg";
+acrylicsSelectPicsSrcOver[35]="A36-RB10-Purple PassionOVER.jpg";
+
+
+var acrylicsPicsTitle=[];
+acrylicsPicsTitle[0]="Purple Lavender";
+acrylicsPicsTitle[1]="Brown Rose";
+acrylicsPicsTitle[2]="Deep Purple White";
+acrylicsPicsTitle[3]="Green-LightGreen";
+acrylicsPicsTitle[4]="Red Pink";
+acrylicsPicsTitle[5]="Turquoise Black";
+acrylicsPicsTitle[6]="Dark Blue-Lightt Blue";
+acrylicsPicsTitle[7]="Orange Gold";
+acrylicsPicsTitle[8]="Red White";
+acrylicsPicsTitle[9]="Black White";
+acrylicsPicsTitle[10]="Orange Black";
+acrylicsPicsTitle[11]="Aqua Green";
+acrylicsPicsTitle[12]="Copper Gold";
+acrylicsPicsTitle[13]="Aqua Black";
+acrylicsPicsTitle[14]="Gold White";
+acrylicsPicsTitle[15]="White Black";
+acrylicsPicsTitle[16]="Cherry Rose";
+acrylicsPicsTitle[17]="Green Yellow Black";
+acrylicsPicsTitle[18]="Camouflage";
+acrylicsPicsTitle[19]="Stained Glass";
+acrylicsPicsTitle[20]="Seashell";
+acrylicsPicsTitle[21]="Black Gold";
+acrylicsPicsTitle[22]="Ruby Red";
+acrylicsPicsTitle[23]="Sapphire Blue";
+acrylicsPicsTitle[24]="Amethyst Purple";
+acrylicsPicsTitle[25]="Emerald Green";
+acrylicsPicsTitle[26]="Antique Silver";
+acrylicsPicsTitle[27]="Molten Bronze";
+acrylicsPicsTitle[28]="Marinara";
+acrylicsPicsTitle[29]="Grape Vine";
+acrylicsPicsTitle[30]="Northern Lights";
+acrylicsPicsTitle[31]="Silver Banana Split";
+acrylicsPicsTitle[32]="Parrot Bay";
+acrylicsPicsTitle[33]="Earth Core";
+acrylicsPicsTitle[34]="Pomegranate Martini";
+acrylicsPicsTitle[35]="Purple Passion";
+
+
+
+
+/* the acrylic pictures displayed UNDER the Pen pictures */ 
+var acrylicsUnderPicsSrc=[];
+var acrylicsUnderPicsSrcDir="pictures/acrylics/under/";
+acrylicsUnderPicsSrc[0]="1034_Purp-Lavndr.jpg";
+acrylicsUnderPicsSrc[1]="1134_Brown-Rose.jpg";
+acrylicsUnderPicsSrc[2]="1234_Deep Purp-White.jpg";
+acrylicsUnderPicsSrc[3]="1334_Green-LtGreen.jpg";
+acrylicsUnderPicsSrc[4]="1434_Red-Pink.jpg";
+acrylicsUnderPicsSrc[5]="1534_Turquoise-Black.jpg";
+acrylicsUnderPicsSrc[6]="1634_DrkBlue-LtBlue.jpg";
+acrylicsUnderPicsSrc[7]="1734_Orange-Gold.jpg";
+acrylicsUnderPicsSrc[8]="2034_Red-White.jpg";
+acrylicsUnderPicsSrc[9]="2134_Black-White.jpg";
+acrylicsUnderPicsSrc[10]="2234-Orange-Black.jpg";
+acrylicsUnderPicsSrc[11]="2334_Aqua-Green.jpg";
+acrylicsUnderPicsSrc[12]="2434_Copper-Gold.jpg";
+acrylicsUnderPicsSrc[13]="2534_Aqua-Black.jpg";
+acrylicsUnderPicsSrc[14]="2634_Gold-White.jpg";
+acrylicsUnderPicsSrc[15]="2734_White-Black.jpg";
+acrylicsUnderPicsSrc[16]="2834_Cherry-Rose.jpg";
+acrylicsUnderPicsSrc[17]="2934_Green-Yellow-Black.jpg";
+acrylicsUnderPicsSrc[18]="4034_Camouflage.jpg";
+acrylicsUnderPicsSrc[19]="4134_Stained Glass.jpg";
+acrylicsUnderPicsSrc[20]="4234_Seashell.jpg";
+acrylicsUnderPicsSrc[21]="4334_Black-Gold.jpg";
+acrylicsUnderPicsSrc[22]="6034_Ruby Red.jpg";
+acrylicsUnderPicsSrc[23]="6134_Sapphire Blue.jpg";
+acrylicsUnderPicsSrc[24]="6234_Amethyst Purple.jpg";
+acrylicsUnderPicsSrc[25]="6334_Emerald Green.jpg";
+acrylicsUnderPicsSrc[26]="RB01-Antique Silver.jpg";
+acrylicsUnderPicsSrc[27]="RB02-Molten Bronze.jpg";
+acrylicsUnderPicsSrc[28]="RB03-Marinara.jpg";
+acrylicsUnderPicsSrc[29]="RB04-Grape Vines.jpg";
+acrylicsUnderPicsSrc[30]="RB05-Northern Lights.jpg";
+acrylicsUnderPicsSrc[31]="RB06-Silver Banana Split.jpg";
+acrylicsUnderPicsSrc[32]="RB07-Parrot Bay.jpg";
+acrylicsUnderPicsSrc[33]="RB08-Earth Core.jpg";
+acrylicsUnderPicsSrc[34]="RB09-Pomegranate Martini.jpg";
+acrylicsUnderPicsSrc[35]="RB10-Purple Passion.jpg";
+
+
+
+var styleOptionPics=[];
+var styleOptionPicsOver=[];
+var styleOptionTitle=[];
+var styleOptionPicsDir="pictures/styles/under/";
+styleOptionTitle[0]="Comfort Pen Style<br>Wood - $35&nbsp; &nbsp;Acrylic - $38";
+styleOptionPics[0]=[];
+styleOptionPics[0][0]="Comfort Blk Enamel Option.png";
+styleOptionPics[0][1]="Comfort Brs Satin Option.png";
+styleOptionPics[0][2]="Comfort Chrome Option.png";
+styleOptionPics[0][3]="Comfort Copper Option.png";
+styleOptionPics[0][4]="Comfort Gold Option.png";
+styleOptionPics[0][5]="Comfort Gun Metal Option.png";
+styleOptionPicsOver[0]=[];
+styleOptionPicsOver[0][0]="Comfort Blk Enamel OptionOver.png";
+styleOptionPicsOver[0][1]="Comfort Brs Satin OptionOver.png";
+styleOptionPicsOver[0][2]="Comfort Chrome OptionOver.png";
+styleOptionPicsOver[0][3]="Comfort Copper OptionOver.png";
+styleOptionPicsOver[0][4]="Comfort Gold OptionOver.png";
+styleOptionPicsOver[0][5]="Comfort Gun Metal OptionOver.png";
+
+styleOptionTitle[1]="Pen Style: Designer<br>Wood - $37&nbsp; &nbsp;Acrylic - $40";
+styleOptionPics[1]=[];
+styleOptionPics[1][0]="Designer 24k Gold Option.png";
+styleOptionPics[1][1]="Designer Brs Satin Option.png";
+styleOptionPics[1][2]="Designer Chrome Option.png";
+styleOptionPics[1][3]="Designer Gun Metal Option.png";
+styleOptionPicsOver[1]=[];
+styleOptionPicsOver[1][0]="Designer 24k Gold OptionOver.png";
+styleOptionPicsOver[1][1]="Designer Brs Satin OptionOver.png";
+styleOptionPicsOver[1][2]="Designer Chrome OptionOver.png";
+styleOptionPicsOver[1][3]="Designer Gun Metal OptionOver.png";
+
+styleOptionTitle[2]="Pen Style: Executive<br>Wood - $34&nbsp; &nbsp;Acrylic - $37";
+styleOptionPics[2]=[];
+styleOptionPics[2][0]="Executive Brs Satin Option.png";
+styleOptionPics[2][1]="Executive Gold Option.png";
+styleOptionPics[2][2]="Executive Gun Metal Option.png";
+styleOptionPicsOver[2]=[];
+styleOptionPicsOver[2][0]="Executive Brs Satin OptionOver.png";
+styleOptionPicsOver[2][1]="Executive Gold OptionOver.png";
+styleOptionPicsOver[2][2]="Executive Gun Metal OptionOver.png";
+
+styleOptionTitle[3]="Pen Style: SlimLine<br>Wood - $23&nbsp; &nbsp;Acrylic - $26";
+styleOptionPics[3]=[];
+styleOptionPics[3][0]="SlimLine 24k Gold Option.png";
+styleOptionPics[3][1]="SlimLine Ant Brass Option.png ";
+styleOptionPics[3][2]="SlimLine Chrome Option.png";
+styleOptionPics[3][3]="SlimLine Gold Option.png";
+styleOptionPics[3][4]="SlimLine Gun Metal Option.png";
+styleOptionPics[3][5]="SlimLineBrs Satin Option.png";
+styleOptionPicsOver[3]=[];
+styleOptionPicsOver[3][0]="SlimLine 24k Gold OptionOver.png";
+styleOptionPicsOver[3][1]="SlimLine Ant Brass OptionOver.png ";
+styleOptionPicsOver[3][2]="SlimLine Chrome OptionOver.png";
+styleOptionPicsOver[3][3]="SlimLine Gold OptionOver.png";
+styleOptionPicsOver[3][4]="SlimLine Gun Metal OptionOver.png";
+styleOptionPicsOver[3][5]="SlimLineBrs Satin OptionOver.png";
+
+styleOptionTitle[4]="Pen Style: TrimLine<br>Wood - $25&nbsp; &nbsp;Acrylic - $28";
+styleOptionPics[4]=[];
+styleOptionPics[4][0]="TrimLine 24k Gold Option.png";
+styleOptionPics[4][1]="TrimLine Chrome Option.png";
+styleOptionPics[4][2]="TrimLine Gun Metal Option.png";
+styleOptionPicsOver[4]=[];
+styleOptionPicsOver[4][0]="TrimLine 24k Gold OptionOver.png";
+styleOptionPicsOver[4][1]="TrimLine Chrome OptionOver.png";
+styleOptionPicsOver[4][2]="TrimLine Gun Metal OptionOver.png";
+
+
+
+
+stylePicsDir="pictures/styles/selection/"
+var stylePics=[];
+stylePics[0]="1p-Comfort-A-GoldwGrip.jpg";
+stylePics[1]="1p-Designer-W-Gold.jpg";
+stylePics[2]="1p-Executv-W-24kGold.jpg";
+stylePics[3]="1p-SlimLine-A-24kGold.jpg";
+stylePics[4]="1p-TrimLine-W-Gold.jpg";
+var stylePicsOver=[];
+stylePicsOver[0]="1p-Comfort-A-GoldwGrip OVER.jpg";
+stylePicsOver[1]="1p-Designer-W-Gold OVER.jpg";
+stylePicsOver[2]="1p-Executv-W-24kGold OVER.jpg";
+stylePicsOver[3]="1p-SlimLine-A-24kGold OVER.jpg";
+stylePicsOver[4]="1p-TrimLine-W-Gold OVER.jpg";
+
+var stylePicsTitle=[];
+var stylePicsTitle2=[];
+
+stylePicsTitle[0]="Comfort";
+stylePicsTitle2[0]="As Shown: Gold Components <b>with</b> Comfort Grip - Sapphire Blue Acrylic<br>Wood - $35.00&nbsp; &nbsp;Acrylic - $38.00";
+stylePicsTitle[1]="Designer";
+stylePicsTitle2[1]="As Shown: Gold Components - Zebrawood Wood<br>Wood - $37.00&nbsp; &nbsp;Acrylic - $40.00";
+stylePicsTitle[2]="Executive";
+stylePicsTitle2[2]="As Shown: 24K Gold Components - Marinara Acrylic<br>Wood - $34.00&nbsp; &nbsp;Acrylic - $37.00";
+stylePicsTitle[3]="SlimLine";
+stylePicsTitle2[3]="As Shown: 24K Gold components - Green Yellow Black Acrylic<br>Wood - $23.00&nbsp; &nbsp;Acrylic - $26.00";
+stylePicsTitle[4]="TrimLine";
+stylePicsTitle2[4]="As Shown: Gold Components - Bocate Wood<br>Wood - $25.00&nbsp; &nbsp;Acrylic - $28.00";
+
+
+//**************************************************************
+									
+									function switchMaterialfromPic(which)
+									
+//**************************************************************
+{	// switchMaterial is called from the "onchange" event of the Materials select statement   
+	cl("whichA: "+which);
+	//cl("acrylicSrc: "+acrylicsUnderPicsSrc[which]);
+	currentMaterial=which.toString();
+	currentWood="-";
+	document.getElementById(`picMaterial`).src=acrylicsUnderPicsSrcDir+acrylicsUnderPicsSrc[which];
+	document.getElementById(`picTitle`).innerHTML=acrylicsPicsTitle[which];
+}
+
+
+function processMouseOver(which)
+{
+	document.getElementById(`aPic`+which).src=acrylicsSelectPicsSrcOverDir+acrylicsSelectPicsSrcOver[which];
+}
+
+function resetMouseOver(which)
+{
+	document.getElementById(`aPic`+which).src=acrylicsSelectPicsSrcDir+acrylicsSelectPicsSrc[which];	
+}
+
+
+//**************************************************************
+									
+									function switchWoodsfromPic(which)
+									
+//**************************************************************
+{	cl("whichW: "+which);
+	currentWood=which.toString();
+	currentMaterial="-"
+	document.getElementById(`picMaterial`).src=woodsUnderPicsSrcDir+woodsUnderPicsSrc[which];
+	document.getElementById(`picTitle`).innerHTML=woodsPicsTitle[which];
+}
+
+
+function processWoodsMouseOver(which)
+{
+	document.getElementById(`wPic`+which).src=woodsSelectPicsSrcOverDir+woodsSelectPicsSrcOver[which];	
+}
+
+function resetWoodsMouseOver(which)
+{
+	document.getElementById(`wPic`+which).src=woodsSelectPicsSrcDir+woodsSelectPicsSrc[which];
+}
+
+//**************************************************************
+									
+									function switchStyleFromPic(which)
+									
+//**************************************************************
+{	cl("whichS: "+which);
+	currentStyleSub=which.toString();
+	document.getElementById(`picStyle`).src=styleOptionPicsDir+styleOptionPics[currentStyle][which];
+}
+									
+function processStyleMouseOver(which)									
+{	document.getElementById(`sPic`+which).src=styleOptionPicsDir+styleOptionPicsOver[currentStyle][which]; }
+
+function processStyleMouseOut(which)
+{	document.getElementById(`sPic`+which).src=styleOptionPicsDir+styleOptionPics[currentStyle][which]; }
+
+
+
+
+</script>
+
+
+
+<body>
+
+
+
+
+	<div id="overlay_content"  style="display:nonex">
+		<table width = "100vw"  border='0'  collaspe='collaspe'  cellspacing="0" cellpadding="0">
+			<tr>
+				<td align='center'>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div id="content_display_div_title" class="display_content_title" style="display:nonex">
+        <center><h1><b><u>Pen Styles</u></b></h1></center>
+        <center><p><h2>Choose one of the pen styles below.</h2></p>
+			<br>	</center>
+	</div>
+	
+	<div id="content_display_div" class="display_content_clear" style="display:nonex">
+    <div class="fixed-size-container"> 
+
+         <div class="fixed-size"><img src="pictures/styles/selection/1p-Comfort-A-GoldwGrip.jpg" 
+            id="img1" width="180" height="300" style="cursor: pointer" onclick="resetToStart(0,'4','23','-')">
+            <p><center><b><h1>Comfort</h1></b> <h2>Pen style</h2><h3>with Gold Components, <b>WITH</b> Comfort Grip.</p>
+            <p><small>(<b>ACRYLIC</b> - <I>Sapphire Blue</I>)</small<p>
+            <p>Can be made WITH or<br> WITHOUT Comfort Grip!</h3></p>
+            </small></center></p></div>
+            
+         <div class="fixed-size"> <img src="pictures/styles/selection/1p-Designer-W-Gold.jpg" 
+            id="img2" width="180" height="300" style="cursor: pointer" onclick="resetToStart(1,'0','-','6')">
+            <p><center><b><h1>Designer</h1></b><h2>Pen style</h2><h3>with Gold Components.</p>
+            <p><small>(<b>WOOD</b> - <I>Zebrawood</I>)</h3></small></center></p></div>
+
+         <div class="fixed-size"><img src="pictures/styles/selection/1p-Executv-W-24kGold.jpg" 
+            id="img3" width="180" height="300" style="cursor: pointer" onclick="resetToStart(2,'1','28','-')">
+            <p><center><b><h1>Executive</h1></b><h2>Pen style</h2><h3>with 24K Gold Components.</p></font:>
+            <p><small>(<b>ACRYLIC</b> - <I>Marinara</I>)</h3></small></center></p></div>
+
+         <div class="fixed-size"><img src="pictures/styles/selection/1p-SlimLine-A-24kGold.jpg" 
+             id="img4" width="180" height="300" style="cursor: pointer" onclick="resetToStart(3,'0','17','-')">
+             <p><center><b><h1>SlimLine</h1></b><H2>Pen style</H2><h3>with 24K Gold Components.</p>
+             <p><small>(<b>ACRYLIC</b> - <I>Green, Yellow, Black</I>)</h3></small></center></p></div>
+
+         <div class="fixed-size"><img src="pictures/styles/selection/1p-TrimLine-W-Gold.jpg" 
+            id="img5" width="180" height="300" style="cursor: pointer" onclick="resetToStart(4,'0','-','6')">
+            <p><center><b><h1>TrimLine</h1></b><h2>Pen style</h2><h3>with Gold Components.</p>
+            <p><small>(<b>WOOD</b> - <I>Bocate</I>)</h3></small></center></p>
+			</div>
+
+         
+    </div> 
+	</div>
+
+
+
+<table align='center' style='background-color:#fff' border='0' width='100%' cellspacing='0' cellpadding='0' >
+
+<tr style="height: 10px"><td></td></tr>
+
+<tr><td></td><td style="width: 600px">
+	<div class="testParent">
+		<img alt="" class="testBottom" id="picMaterial" src="" style="width: 600px;" />
+		<img alt="" class="testTop" id="picStyle" src="" style="width: 600px" />
+		<span class="testTitle" id="picTitle" ><span>
+	</div>
+</td><td></td></tr>
+
+<tr style="height: 20px"><td style="font-size:22px; font-family: arial" colspan="3" align="center">This is the pen I want. Click to Send to Cart...<input type="button" value="Send To Cart" class="button-29-Green" onclick="sendIt.html"></td></tr>
+<tr style="height: 20px"><td></td></tr>
+
+</table>
+
+
+<table align='center' style='background-color:#fff; width:100%;  max-width: 1000px;' border='0'  cellspacing='0' cellpadding='0' >
+	<tr valign="top" >
+		<td align='center'><hr>
+						<span style="font-family: arial; font-size: 22px ">Component Selections</span><br><hr>
+			<div style="text-align: center;background-color: white; width: 350px; height: 70vh; display: flex; flex-wrap: wrap;">					
+						<span id="styleTitle" style="font-family: arial; font-size: 16px; font-weight: bold"></span><br>
+						<input type="button" class="button-29-Green" style="font-size: 12px" value="Change Pen Style" onclick="resetStyleSelect()">
+						<div style="height: 20px"><br></div>
+						<img id='sPic0' src="" onclick="switchStyleFromPic(0)" onmouseover="processStyleMouseOver(0)" onmouseout="processStyleMouseOut(0)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic1' src="" onclick="switchStyleFromPic(1)" onmouseover="processStyleMouseOver(1)" onmouseout="processStyleMouseOut(1)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic2' src="" onclick="switchStyleFromPic(2)" onmouseover="processStyleMouseOver(2)" onmouseout="processStyleMouseOut(2)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic3' src="" onclick="switchStyleFromPic(3)" onmouseover="processStyleMouseOver(3)" onmouseout="processStyleMouseOut(3)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic4' src="" onclick="switchStyleFromPic(4)" onmouseover="processStyleMouseOver(4)" onmouseout="processStyleMouseOut(4)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic5' src="" onclick="switchStyleFromPic(5)" onmouseover="processStyleMouseOver(5)" onmouseout="processStyleMouseOut(5)" style="cursor: pointer; width: 350px" /><br>
+						<img id='sPic6' src="" onclick="switchStyleFromPic(6)" onmouseover="processStyleMouseOver(6)" onmouseout="processStyleMouseOut(6)" style="cursor: pointer; width: 350px" /><br>
+			</div>
+		</td>
+		<td align='center'><hr>
+						<span style="font-family: arial; font-size: 22px; ">Acrylic Selections</span><br><hr>
+			<div style="text-align: center;background-color: white; width: 350px;  height: 70vh; overflow: auto;">
+						<div style="height: 10px"><br></div>
+						<img id='aPic0' src='' onclick='switchMaterialfromPic(0)' onmouseover='processMouseOver(0)' onmouseout='resetMouseOver(0)' style='cursor: pointer; width: 300px' /><br><img id='aPic1' src='' onclick='switchMaterialfromPic(1)' onmouseover='processMouseOver(1)' onmouseout='resetMouseOver(1)' style='cursor: pointer; width: 300px' /><br><img id='aPic2' src='' onclick='switchMaterialfromPic(2)' onmouseover='processMouseOver(2)' onmouseout='resetMouseOver(2)' style='cursor: pointer; width: 300px' /><br><img id='aPic3' src='' onclick='switchMaterialfromPic(3)' onmouseover='processMouseOver(3)' onmouseout='resetMouseOver(3)' style='cursor: pointer; width: 300px' /><br><img id='aPic4' src='' onclick='switchMaterialfromPic(4)' onmouseover='processMouseOver(4)' onmouseout='resetMouseOver(4)' style='cursor: pointer; width: 300px' /><br><img id='aPic5' src='' onclick='switchMaterialfromPic(5)' onmouseover='processMouseOver(5)' onmouseout='resetMouseOver(5)' style='cursor: pointer; width: 300px' /><br><img id='aPic6' src='' onclick='switchMaterialfromPic(6)' onmouseover='processMouseOver(6)' onmouseout='resetMouseOver(6)' style='cursor: pointer; width: 300px' /><br><img id='aPic7' src='' onclick='switchMaterialfromPic(7)' onmouseover='processMouseOver(7)' onmouseout='resetMouseOver(7)' style='cursor: pointer; width: 300px' /><br><img id='aPic8' src='' onclick='switchMaterialfromPic(8)' onmouseover='processMouseOver(8)' onmouseout='resetMouseOver(8)' style='cursor: pointer; width: 300px' /><br><img id='aPic9' src='' onclick='switchMaterialfromPic(9)' onmouseover='processMouseOver(9)' onmouseout='resetMouseOver(9)' style='cursor: pointer; width: 300px' /><br><img id='aPic10' src='' onclick='switchMaterialfromPic(10)' onmouseover='processMouseOver(10)' onmouseout='resetMouseOver(10)' style='cursor: pointer; width: 300px' /><br><img id='aPic11' src='' onclick='switchMaterialfromPic(11)' onmouseover='processMouseOver(11)' onmouseout='resetMouseOver(11)' style='cursor: pointer; width: 300px' /><br><img id='aPic12' src='' onclick='switchMaterialfromPic(12)' onmouseover='processMouseOver(12)' onmouseout='resetMouseOver(12)' style='cursor: pointer; width: 300px' /><br><img id='aPic13' src='' onclick='switchMaterialfromPic(13)' onmouseover='processMouseOver(13)' onmouseout='resetMouseOver(13)' style='cursor: pointer; width: 300px' /><br><img id='aPic14' src='' onclick='switchMaterialfromPic(14)' onmouseover='processMouseOver(14)' onmouseout='resetMouseOver(14)' style='cursor: pointer; width: 300px' /><br><img id='aPic15' src='' onclick='switchMaterialfromPic(15)' onmouseover='processMouseOver(15)' onmouseout='resetMouseOver(15)' style='cursor: pointer; width: 300px' /><br><img id='aPic16' src='' onclick='switchMaterialfromPic(16)' onmouseover='processMouseOver(16)' onmouseout='resetMouseOver(16)' style='cursor: pointer; width: 300px' /><br><img id='aPic17' src='' onclick='switchMaterialfromPic(17)' onmouseover='processMouseOver(17)' onmouseout='resetMouseOver(17)' style='cursor: pointer; width: 300px' /><br><img id='aPic18' src='' onclick='switchMaterialfromPic(18)' onmouseover='processMouseOver(18)' onmouseout='resetMouseOver(18)' style='cursor: pointer; width: 300px' /><br><img id='aPic19' src='' onclick='switchMaterialfromPic(19)' onmouseover='processMouseOver(19)' onmouseout='resetMouseOver(19)' style='cursor: pointer; width: 300px' /><br><img id='aPic20' src='' onclick='switchMaterialfromPic(20)' onmouseover='processMouseOver(20)' onmouseout='resetMouseOver(20)' style='cursor: pointer; width: 300px' /><br><img id='aPic21' src='' onclick='switchMaterialfromPic(21)' onmouseover='processMouseOver(21)' onmouseout='resetMouseOver(21)' style='cursor: pointer; width: 300px' /><br><img id='aPic22' src='' onclick='switchMaterialfromPic(22)' onmouseover='processMouseOver(22)' onmouseout='resetMouseOver(22)' style='cursor: pointer; width: 300px' /><br><img id='aPic23' src='' onclick='switchMaterialfromPic(23)' onmouseover='processMouseOver(23)' onmouseout='resetMouseOver(23)' style='cursor: pointer; width: 300px' /><br><img id='aPic24' src='' onclick='switchMaterialfromPic(24)' onmouseover='processMouseOver(24)' onmouseout='resetMouseOver(24)' style='cursor: pointer; width: 300px' /><br><img id='aPic25' src='' onclick='switchMaterialfromPic(25)' onmouseover='processMouseOver(25)' onmouseout='resetMouseOver(25)' style='cursor: pointer; width: 300px' /><br><img id='aPic26' src='' onclick='switchMaterialfromPic(26)' onmouseover='processMouseOver(26)' onmouseout='resetMouseOver(26)' style='cursor: pointer; width: 300px' /><br><img id='aPic27' src='' onclick='switchMaterialfromPic(27)' onmouseover='processMouseOver(27)' onmouseout='resetMouseOver(27)' style='cursor: pointer; width: 300px' /><br><img id='aPic28' src='' onclick='switchMaterialfromPic(28)' onmouseover='processMouseOver(28)' onmouseout='resetMouseOver(28)' style='cursor: pointer; width: 300px' /><br><img id='aPic29' src='' onclick='switchMaterialfromPic(29)' onmouseover='processMouseOver(29)' onmouseout='resetMouseOver(29)' style='cursor: pointer; width: 300px' /><br><img id='aPic30' src='' onclick='switchMaterialfromPic(30)' onmouseover='processMouseOver(30)' onmouseout='resetMouseOver(30)' style='cursor: pointer; width: 300px' /><br><img id='aPic31' src='' onclick='switchMaterialfromPic(31)' onmouseover='processMouseOver(31)' onmouseout='resetMouseOver(31)' style='cursor: pointer; width: 300px' /><br><img id='aPic32' src='' onclick='switchMaterialfromPic(32)' onmouseover='processMouseOver(32)' onmouseout='resetMouseOver(32)' style='cursor: pointer; width: 300px' /><br><img id='aPic33' src='' onclick='switchMaterialfromPic(33)' onmouseover='processMouseOver(33)' onmouseout='resetMouseOver(33)' style='cursor: pointer; width: 300px' /><br><img id='aPic34' src='' onclick='switchMaterialfromPic(34)' onmouseover='processMouseOver(34)' onmouseout='resetMouseOver(34)' style='cursor: pointer; width: 300px' /><br><img id='aPic35' src='' onclick='switchMaterialfromPic(35)' onmouseover='processMouseOver(35)' onmouseout='resetMouseOver(35)' style='cursor: pointer; width: 300px' /><br>			<br></div>
+
+			<br></div>
+		</td>
+		<td align='center'><hr>
+						<span style="font-family: arial; font-size: 22px; ">Wood Selections</span><br><hr>
+			<div style="text-align: center;background-color: white; width: 350px; height: 70vh; overflow: auto;">
+						<div style="height: 10px"><br></div>
+						<img id='wPic0' src='' onclick='switchWoodsfromPic(0)' onmouseover='processWoodsMouseOver(0)' onmouseout='resetWoodsMouseOver(0)' style='cursor: pointer; width: 300px' /><br><img id='wPic1' src='' onclick='switchWoodsfromPic(1)' onmouseover='processWoodsMouseOver(1)' onmouseout='resetWoodsMouseOver(1)' style='cursor: pointer; width: 300px' /><br><img id='wPic2' src='' onclick='switchWoodsfromPic(2)' onmouseover='processWoodsMouseOver(2)' onmouseout='resetWoodsMouseOver(2)' style='cursor: pointer; width: 300px' /><br><img id='wPic3' src='' onclick='switchWoodsfromPic(3)' onmouseover='processWoodsMouseOver(3)' onmouseout='resetWoodsMouseOver(3)' style='cursor: pointer; width: 300px' /><br><img id='wPic4' src='' onclick='switchWoodsfromPic(4)' onmouseover='processWoodsMouseOver(4)' onmouseout='resetWoodsMouseOver(4)' style='cursor: pointer; width: 300px' /><br><img id='wPic5' src='' onclick='switchWoodsfromPic(5)' onmouseover='processWoodsMouseOver(5)' onmouseout='resetWoodsMouseOver(5)' style='cursor: pointer; width: 300px' /><br><img id='wPic6' src='' onclick='switchWoodsfromPic(6)' onmouseover='processWoodsMouseOver(6)' onmouseout='resetWoodsMouseOver(6)' style='cursor: pointer; width: 300px' /><br><img id='wPic7' src='' onclick='switchWoodsfromPic(7)' onmouseover='processWoodsMouseOver(7)' onmouseout='resetWoodsMouseOver(7)' style='cursor: pointer; width: 300px' /><br><img id='wPic8' src='' onclick='switchWoodsfromPic(8)' onmouseover='processWoodsMouseOver(8)' onmouseout='resetWoodsMouseOver(8)' style='cursor: pointer; width: 300px' /><br><img id='wPic9' src='' onclick='switchWoodsfromPic(9)' onmouseover='processWoodsMouseOver(9)' onmouseout='resetWoodsMouseOver(9)' style='cursor: pointer; width: 300px' /><br><img id='wPic10' src='' onclick='switchWoodsfromPic(10)' onmouseover='processWoodsMouseOver(10)' onmouseout='resetWoodsMouseOver(10)' style='cursor: pointer; width: 300px' /><br>			</div>
+
+			</div>
+		</td>
+	</tr>
+	
+								 
+
+
+
+<tr style="height: 100px"><td></td></tr>
+
+</table>
+
+
+</body>
+
+
+
+</html>
+
+<script>
+
+
+/* Load the Select Statements */
+	for(i=0; i<36; i++)
+	{	document.getElementById("aPic"+i).src=acrylicsSelectPicsSrcDir+acrylicsSelectPicsSrc[i]; }
+
+
+	for(i=0; i<11; i++)
+	{	document.getElementById("wPic"+i).src=woodsSelectPicsSrcDir+woodsSelectPicsSrc[i]; }
+
+	//document.getElementById("penStylePic").src=stylePicsDir+stylePics[currentStyle];
+	//document.getElementById("penStyleTitle").innerHTML=stylePicsTitle[currentStyle];
+	//document.getElementById("penStyleTitle2").innerHTML=stylePicsTitle2[currentStyle];
+
+
+	function resetToStart(selectedStyle,S,A,W)
+	{	cl("here");
+		currentStyle=selectedStyle;
+		for(i=0; i<7; i++)
+		{	document.getElementById("sPic"+i).src=""; }
+		
+		for(i=0; i<styleOptionPics[currentStyle].length; i++)
+		{	document.getElementById("sPic"+i).src=styleOptionPicsDir+styleOptionPics[currentStyle][i]; }
+		
+		document.getElementById("styleTitle").innerHTML=styleOptionTitle[currentStyle];
+
+		//document.getElementById("penStylePic").src=stylePicsDir+stylePics[currentStyle];
+
+		if(W!="-")
+		{	switchWoodsfromPic(parseInt(W)); }
+		else
+		{	switchMaterialfromPic(parseInt(A)); }
+		switchStyleFromPic(parseInt(S));
+		document.getElementById("overlay_content").style.display="none";
+		document.getElementById("content_display_div_title").style.display="none";
+		document.getElementById("content_display_div").style.display="none";
+		
+	}
+
+	function resetStyleSelect()
+	{	document.getElementById("overlay_content").style.display="";
+		document.getElementById("content_display_div_title").style.display="";
+		document.getElementById("content_display_div").style.display="";
+	}
+
+
+
+		 document.getElementById("img1").addEventListener("mouseover",changeimage);
+		 document.getElementById("img1").addEventListener("mouseleave",changeimage2);
+		
+		 function changeimage() {
+			 document.getElementById("img1").src="pictures/styles/selection/1p-Comfort-A-GoldwGrip OVER.jpg";
+		 }
+		
+		 function changeimage2() {
+				document.getElementById("img1").src="pictures/styles/selection/1p-Comfort-A-GoldwGrip.jpg";
+		 }
+		 
+		 document.getElementById("img2").addEventListener("mouseover",changeimage3);
+		 document.getElementById("img2").addEventListener("mouseleave",changeimage4);
+		
+		 function changeimage3() {
+			 document.getElementById("img2").src="pictures/styles/selection/1p-Designer-W-Gold OVER.jpg";
+		 }
+		
+		 function changeimage4() {
+				document.getElementById("img2").src="pictures/styles/selection/1p-Designer-W-Gold.jpg";
+		 }
+			
+		 document.getElementById("img3").addEventListener("mouseover",changeimage5);
+		 document.getElementById("img3").addEventListener("mouseleave",changeimage6);
+		
+		 function changeimage5() {
+			 document.getElementById("img3").src="pictures/styles/selection/1p-Executv-W-24kGold OVER.jpg";
+		 }
+		
+		 function changeimage6() {
+				document.getElementById("img3").src="pictures/styles/selection/1p-Executv-W-24kGold.jpg";
+		 }
+
+		 document.getElementById("img4").addEventListener("mouseover",changeimage7);
+		 document.getElementById("img4").addEventListener("mouseleave",changeimage8);
+		
+		 function changeimage7() {
+			 document.getElementById("img4").src="pictures/styles/selection/1p-SlimLine-A-24kGold OVER.jpg";
+		 }
+		
+		 function changeimage8() {
+				document.getElementById("img4").src="pictures/styles/selection/1p-SlimLine-A-24kGold.jpg";
+		 }
+		 
+		 document.getElementById("img5").addEventListener("mouseover",changeimage9);
+		 document.getElementById("img5").addEventListener("mouseleave",changeimage10);
+		
+		 function changeimage9() {
+			 document.getElementById("img5").src="pictures/styles/selection/1p-TrimLine-W-Gold OVER.jpg";
+		 }
+		
+		 function changeimage10() {
+				document.getElementById("img5").src="pictures/styles/selection/1p-TrimLine-W-Gold.jpg";
+		 }
+	
+
+
+</script>

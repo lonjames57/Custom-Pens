@@ -1,0 +1,524 @@
+/*********************************************************************************************
+ *********************************************************************************************
+                             B U T T O N S                                                    
+															 button-29                                                      
+						  Red  Gray Pink Violet DarkBlue Blue  Green  Orange                             
+ *********************************************************************************************
+ *********************************************************************************************
+ *********************************************************************************************/
+
+
+
+
+
+.button-29-Red 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #ffd5d5 0%, #FF8EaA 25%, #bb0000 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+
+@media screen and (min-width: 480px) 
+{  .button-29-Red {
+    font-size: calc(11px + (3 * ((100vw - 320px) / 680)));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Red {
+    font-size: 13px;
+  }
+}
+
+
+.button-29-Red:focus {
+  box-shadow: #aa00000 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aa0000 0 -3px 0 inset;
+}
+
+.button-29-Red:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #aa0000 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Red:active {
+  box-shadow: #aa0000 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+.button-29-Gray 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #f0f0f0 0%, #d2d2d2 25%, #808080 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #eee;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+
+@media screen and (min-width: 480px) 
+{  .button-29-Gray {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Gray {
+    font-size: 13px;
+  }
+}
+
+
+.button-29-Gray:focus {
+  box-shadow: #808080 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #808080 0 -3px 0 inset;
+}
+
+.button-29-Gray:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #808080 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Gray:active {
+  box-shadow: #808080 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+
+/*              PINK                      */
+
+.button-29-Pink 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #Fff 0%, #FF92D4 25%, #F1319F 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+
+@media screen and (min-width: 480px) 
+{  .button-29-Pink {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Pink {
+    font-size: 13px;
+  }
+}
+
+.button-29-Pink:focus {
+  box-shadow: #F1319F 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #F1319F 0 -3px 0 inset;
+}
+
+.button-29-Pink:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #F1319F 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Pink:active {
+  box-shadow: #F1319F 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+/*  Color Numbers are Light -> Dark  */
+
+/*******************************************************/
+/*******************************************************/
+/*                 Violet                              */
+/*******************************************************/
+/*******************************************************/
+.button-29-Violet 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #Fbeafe 0%, #b303d0 25%, #4a006a 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+@media screen and (min-width: 480px) 
+{  .button-29-Violet {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Violet {
+    font-size: 13px;
+  }
+}
+
+
+.button-29-Violet:focus {
+  box-shadow: #4a006a 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #4a006a 0 -3px 0 inset;
+}
+
+.button-29-Violet:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #4a006a 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Violet:active {
+  box-shadow: #4a006a 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+
+/*******************************************************/
+/*******************************************************/
+/*                 DarkBlue                            */
+/*******************************************************/
+/*******************************************************/
+
+.button-29-DarkBlue 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #fff, #5adaff 15%, #000088 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+@media screen and (min-width: 480px) 
+{  .button-29-DarkBlue {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-DarkBlue {
+    font-size: 13px;
+  }
+}
+
+
+.button-29-DarkBlue:focus {
+  box-shadow: #808080 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #00009e 0 -3px 0 inset;
+}
+
+.button-29-DarkBlue:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #00009e 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-DarkBlue:active {
+  box-shadow: #808080 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+
+/*******************************************************/
+/*******************************************************/
+/*               Blue                                  */
+/*******************************************************/
+/*******************************************************/
+
+
+.button-29-Blue 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #fff, #5adaff 25%, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+@media screen and (min-width: 480px) 
+{  .button-29-Blue {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Blue {
+    font-size: 13px;
+  }
+}
+
+
+.button-29-Blue:focus {
+  box-shadow: #5468ff 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5468ff 0 -3px 0 inset;
+}
+
+.button-29-Blue:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5468ff 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Blue:active {
+  box-shadow: #5468ff 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+
+
+/*  background-image: radial-gradient(100% 100% at 100% 0, #6AE71D 0, #138C50 100%); */
+/*******************************************************/
+/*******************************************************/
+/*                    Green                            */
+/*******************************************************/
+/*******************************************************/
+
+.button-29-Green 
+{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #6AE71D 0, #6ABA1D 25%, #004400 100%);
+  border: 3;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  margin-left: 7px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 5px;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+
+@media screen and (min-width: 480px) 
+{  .button-29-Green {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-29-Green {
+    font-size: 13px;
+  }
+}
+
+
+
+.button-29-Green:focus {
+  box-shadow: #004400 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #004400 0 -3px 0 inset;
+	text-decoration: none;
+}
+
+.button-29-Green:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #004400 0 -3px 0 inset;
+	text-decoration: none;
+  transform: translateY(+2px);
+}
+
+.button-29-Green:active {
+  box-shadow: #004400 0 3px 7px inset;
+	text-decoration: none;
+  transform: translateY(-2px);
+}
+
+
+/*******************************************************/
+/*******************************************************/
+/*                     Orange                          */
+/*******************************************************/
+/*******************************************************/
+
+.button-29-Orange
+{
+	
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #FFf556 0% ,#FFa506 25%, #913D03 100%);
+  /* background-image: radial-gradient(100% 100% at 100% 0, #Fff 0%, #FF92D4 25%, #F1319F 100%); */
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+	font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+
+@media screen and (min-width: 480px) 
+{  .button-29-Orange {
+    font-size: calc(10px + 3 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-29-Orange {
+    font-size: 13px;
+  }
+}
+
+.button-29-Orange:focus {
+  box-shadow: #913D03 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #913D03 0 -3px 0 inset;
+}
+
+.button-29-Orange:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #913D03 0 -3px 0 inset;
+  transform: translateY(+2px);
+}
+
+.button-29-Orange:active {
+  box-shadow: #913D03 0 3px 7px inset;
+  transform: translateY(-2px);
+}
+

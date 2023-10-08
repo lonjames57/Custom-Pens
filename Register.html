@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Sign In</h2>
+      <label>
+        <span class="email"><strong>Email Address</strong></span>
+        <input title="Must contain one Upper case, one lower case and one Number." pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" 
+        type="email" required name="email" id="email">
+      </label>
+      <label>
+        <span class="passText"><strong>Password</strong></span>
+        <input title="Must be at least 8 characters." pattern="[a-zA-Z0-9]{8,}" type="password" name="password" id="password">
+      </label>
+<div class="signIn">
+    <a style="text-decoration: none" a href="/choose.html">
+      <button class="submit" type="button">Sign In</button>
+    </a>
+</div>
+
+      <p class="forgot-pass">Forgot Password ?</p>
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>New here?</h2>
+          <p>Sign up and discover<br> great new choices!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>One of us?</h2>
+          <p>If you already have an account, just sign in. Welcome back. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+
+    <!--START: CATEGORY_HEADER-->
+    <tr>
+      <td class="font2"><h2><center><strong><i><u>Create New User Account</u></i></strong></center></h2></td>
+    </tr>
+
+<!--end header block-->
+<!--start create account block-->
+
+        <form action="#0">
+          <!--START: req_firstname-->
+                  <tr>
+                    <td align="left" class="item"><label for="shipping_firstname"><strong>First Name</strong></td>
+                    <td><input name="shipping_firstname" type="text" id="shipping_firstname" maxlength="50" size="40" 
+                      class="txtBoxStyle" required></label></td>
+                  <tr>
+               
+          <!--START: req_shipping_lastname--> 
+                  <tr>                             
+                    <td align="left" class="item"><label for="lastname"><strong>Last Name</strong></td>
+                    <td><input name="lastname" type="text" id="lastname" maxlength="50" size="40" class="txtBoxStyle" required></label></td>
+                 </tr>
+          <!--START: req_shipping_email-->
+                 <tr>
+                    <td align="left" class="item"><label for="email"><strong>Email</strong></td>
+                    <td><input title="Must contain one Upper case, one lower case and one Number." pattern="[A-Za-z0-9._+-!]+@[A-Za-z0-9 -]+\.[a-z]{2,}" 
+                      name="email" type="email" id="email" maxlength="50" size="40" class="txtBoxStyle" required></label></td>
+                 </tr>
+          <!--START: req_password-->
+                 <tr>
+                    <td align="left" class="item"><label for="password" ><strong>Password</strong></td>
+                    <td><input title="Must be at least 8 characters." pattern="[a-zA-Z0-9]{8,}" name="password" type="text" 
+                      id="password" maxlength="50" size="40" class="txtBoxStyle" required ></label></td>
+                 </tr>
+          <!--START: req_password_ver-->
+                 <tr>
+                    <td align="left" class="item"><label for="password_ver"><strong>Confirm Password</strong></td>
+                    <td><input name="password_ver" type="text" id="password_ver" maxlength="50" size="40" class="txtBoxStyle" required></label></td>
+                </tr>
+          <!--START: req_shipping_address-->
+                 <tr>
+                    <td align="left" class="item"><label for="shipping_address"><strong>Address</strong></td>
+                    <td><input name="shipping_address" type="text" id="shipping_address" maxlength="50" size="40" class="txtBoxStyle" /></label></td>
+                 </tr>
+          <!--START: req_shipping_city-->
+                 <tr>
+                    <td align="left" class="item"><label for="shipping_city"><strong>City</strong></td>
+                    <td><input name="shipping_city" type="text" id="shipping_city" maxlength="50" size="40" class="txtBoxStyle" /></label></td>
+                 </tr>
+          <!--START: req_shipping_state-->
+                 <tr>                                                 
+                    <div class="state"><label for="shipping_state"><td align="left" class="item"><strong>State</strong></td>
+                    <select id="shipping_state" name="shipping_state">
+                    <maxlength="3" class="shipping_state"></label></div>
+                                    <div class="states">
+                                        <option value=”California”>CA</option>
+                                        <option value=”Alabama”>AL</option>
+                                        <option value=”Alaska">AK</option>
+                                        <option value=”Arizona”>AZ</option>
+                                        <option value=”Arkansas">AR</option>
+                                        <option value=”Colorado”>CO</option>
+                                        <option value=”Connecticut”>CT</option>
+                                        <option value=”Delaware”>DE</option>
+                                        <option value=”Florida”>FL</option>
+                                        <option value=”Georgia”>GA</option>
+                                        <option value=”Hawaii”>HI</option>
+                                        <option value=”Idaho”>ID</option>
+                                        <option value=”Illinois”>IL</option>
+                                        <option value=”Indiana”>IN</option>
+                                        <option value=”Iowa”>IA</option>
+                                        <option value=”Kansas”>KS</option>
+                                        <option value=”Kentucky”>KY</option>
+                                        <option value=”Louisiana”>LA</option>
+                                        <option value=”Maine”>ME</option>
+                                        <option value=”Maryland”>MD</option>
+                                        <option value=”Massachusetts”>MA</option>
+                                        <option value=”Michigan”>MI</option>
+                                        <option value=”Minnesota”>MN</option>
+                                        <option value=”Mississippi”>MS</option>
+                                        <option value=”Missouri”>MO</option>
+                                        <option value=”Montana”>MT</option>
+                                        <option value=”Nebraska”>NE</option>
+                                        <option value=”Nevada”>NV</option>
+                                        <option value=”New Hampshire”>NH</option>
+                                        <option value=”New Jersey”>NJ</option>
+                                        <option value=”New Mexico”>NM</option>
+                                        <option value=”New York”>NY</option>
+                                        <option value=”North Carolina”>NC</option>
+                                        <option value=”North Dakota”>ND</option>
+                                        <option value=”Ohio”>OH</option>
+                                        <option value=”Oklahoma”>OK</option>
+                                        <option value=”Oregon”>OR</option>
+                                        <option value=”Pennsylvania”>PA</option>
+                                        <option value=”Rhode Island”>RI</option>
+                                        <option value=”South Carolina”>SC</option>
+                                        <option value=”South Dakota”>SD</option>
+                                        <option value=”Tennessee”>TN</option>
+                                        <option value=”Texas”>TX</option>
+                                        <option value=”Utah”>UT</option>
+                                        <option value=”Vermont”>VT</option>
+                                        <option value=”Virginia”>VA</option>
+                                        <option value=”Washington”>WA</option>
+                                        <option value=”West Virginia”>WV</option>
+                                        <option value=”Wisconsin”>WI</option>
+                                        <option value=”Wyoming”>WY</option>
+                                   </div>
+                                </tr>
+
+  <!--START: req_shipping_zip-->
+
+         <tr>
+          <td>
+            <input name="USA" type="text" id="USA" /></td>
+
+            <td align="left" class="item">
+              <label for="shipping_zip"><strong>Zip</strong>
+              <input name="shipping_zip" type="text" id="shipping_zip" maxlength="15" size="40" /></label></td>
+
+        </tr>
+      
+  <div class="signUp">
+    <a style="text-decoration: none" a href="/choose.html">
+        <button type="button" class="submit">Sign Up Now</button>
+    </a>
+  </div>
+        <button type="reset" class="reset">Reset Form</button>
+      </div>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+
+</body>
+</html>
