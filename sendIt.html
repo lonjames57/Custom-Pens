@@ -8,10 +8,40 @@
 </head>
 <body>
  <p><h2>This is the pen you have chosen:</p></h2><br>
-    var currentStyle=0;
-    var currentStyleSub=0;
-    var currentMaterial=0;
-    var currentWood=0;
+ <td style="width: 600px">
+    <div id="destinationContainer">
+        
+    </div>
+</td>
+
+<script>
+    function copyImages() {
+        const sourceContainer=document.getElementById('testParent');
+
+        if (!sourceContainer){
+            console.error('Source container not found.');
+            return;
+        }
+
+        const destinationContainer=document.getElementById      ('destinationContainer');
+
+        if (!destinationContainer){
+            console.error('Destination container not found.');
+            return;
+        }
+    const imagesToCopy=sourceContainer.querySelectorAll('img');
+        imagesToCopy.forEach(img=>{
+            const clonedImg=img.cloneNode(true);
+            destinationContainer.appendChild(clonedImg);
+        
+        });
+
+        window.addEventListener('load', copyImages);
+
+
+    }
+
+</script>
     
 </body>
 </html>
